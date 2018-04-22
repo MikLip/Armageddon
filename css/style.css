@@ -89,6 +89,60 @@ body, html {
   border: 1px solid black;
 }
 
+/*/////////////////// Pierwsza sekcja z hero RWD ////////////////////////*/
+
+@media only screen and (max-width: 768px) {
+
+  .bg-section-one {
+      /* The image used */
+      background-image: url("../img/Hero-img.jpg");
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+  }
+
+  .hero-text {
+    width: 85%; /* to pomogło na łamanie tekstu, ale nie wiem czy nie będzie stanowiło problemu gdzie indziej */
+    color: #fff;
+    font-family: 'Creepster', cursive;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  .bg-section-one .btn {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    padding: 4px 4px;
+    box-shadow: inset 0 0 0 40px #000;
+    border: 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    background: #fff;
+    border-radius: 4px;
+    transition: 0.5s color, 0.5s box-shadow;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+}
+
 /*/////////////////// Druga sekcja z boxami ////////////////////////*/
 
 .bg-section-two {
@@ -191,7 +245,221 @@ body, html {
   color: #000;
 }
 
+/*/////////////////// Druga sekcja z boxami RWD ////////////////////////*/
+@media only screen and (max-width: 549px) {
+  .bg-section-two {
+    width: 100%;
+    height: 250%;
+  }
+  .bg-section-two-character-container {
+    width: 100%;
+  }
+  .top-left {
+    left: 1%;
+    top: 0%;
+  }
+  .bottom-left {
+    left: 1%;
+    top: 25%;
+  }
+  .top-right {
+    left: 1%;
+    top: 50%;
+  }
+  .bottom-right {
+    left: 1%;
+    top: 75%;
+  }
+  .bg-section-two-character-title {
+    font-size: 16px;
+    padding: 2px 4px;
+  }
+  .bg-section-two-character-description {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+  .bg-section-two-character-container .btn:hover {
+    box-shadow: inset 0 0 0 3px #fff;
+    color: red;
+  }
+}
 
+@media only screen and (min-width: 550px) and (max-width: 740px) {
+  .bg-section-two {
+    width: 100vw;
+    height: 300%;
+    padding: 0 auto;
+  }
+  .bg-section-two-character-container {
+    width: 100%;
+  }
+  .top-left {
+    left: 0%;
+    top: 0%;
+  }
+  .bottom-left {
+    left: 0%;
+    top: 25%;
+  }
+  .top-right {
+    left: 0%;
+    top: 50%;
+  }
+  .bottom-right {
+    left: 0%;
+    top: 75%;
+  }
+  .bg-section-two-character-title {
+    font-size: 16px;
+    padding: 2px 4px;
+  }
+  .bg-section-two-character-description {
+    font-size: 14px;
+    padding: 2px 2px;
+  }
+}
+
+@media only screen and (min-width: 741px) and (max-width: 887px) {
+  .bg-section-two {
+    width: 100vw;
+    height: 300%;
+  }
+  .bg-section-two-character-container {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .top-left {
+    left: 0%;
+    top: 0%;
+  }
+  .bottom-left {
+    left: 0%;
+    top: 25%;
+  }
+  .top-right {
+    left: 0%;
+    top: 50%;
+  }
+  .bottom-right {
+    left: 0%;
+    top: 75%;
+  }
+  .bg-section-two-character-title {
+    font-size: 16px;
+    padding: 2px 4px;
+  }
+  .bg-section-two-character-description {
+    font-size: 14px;
+    padding: 2px 2px;
+  }
+}
+
+@media only screen and (min-width: 888px) and (max-width: 956px) {
+  .bg-section-two {
+    background-image: url("../img/Section-two.jpg");
+    width: 100%;
+    height: 280%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-section-two-character-container {
+    margin: 0 0 1% 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+
+  .top-left {
+    left: 0%;
+    top: 0%;
+  }
+  .bottom-left {
+    left: 0%;
+    top: 25%;
+  }
+  .top-right {
+    left: 0%;
+    top: 50%;
+  }
+  .bottom-right {
+    left: 0%;
+    top: 75%;
+  }
+  .bg-section-two-character-title {
+    font-size: 16px;
+    padding: 2px 4px;
+  }
+  .bg-section-two-character-description {
+    font-size: 14px;
+    padding: 2px 2px;
+  }
+}
+
+@media only screen and (min-width: 957px) and (max-width: 1149px) {
+  .bg-section-two {
+    height: 110%;
+  }
+  .bg-section-two-character-container {
+    margin: 0 0 1% 0;
+  }
+  .top-left {
+    left: 0%;
+    top: 5%;
+  }
+
+  .bottom-left {
+    left: 0%;
+    top: 50%;
+  }
+
+  .top-right {
+    right: 0%;
+    top: 5%;
+  }
+
+  .bottom-right {
+    right: 0%;
+    top: 50%;
+  }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1545px) {
+  .bg-section-two {
+    height: 110%;
+  }
+  .bg-section-two-character-container {
+    margin: 0 0 1% 0;
+  }
+  .top-left {
+    left: 10%;
+    top: 5%;
+  }
+
+  .bottom-left {
+    left: 10%;
+    top: 50%;
+  }
+
+  .top-right {
+    right: 10%;
+    top: 5%;
+  }
+
+  .bottom-right {
+    right: 10%;
+    top: 50%;
+  }
+}
+
+@media only screen and (min-width: 1546px) {
+  .bg-section-two {
+    height: 110%;
+  }
+  .bg-section-two-character-container {
+    margin: 0 0 3% 0;
+  }
 
 /*/////////////////// Trzecia sekcja z galerią ////////////////////////*/
 
